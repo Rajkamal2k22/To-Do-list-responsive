@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="https://aboutmeto-dolist.netlify.app/">About</a></li>
+            <li><a href="https://to-dolistraj.netlify.app/">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/rajkamal-kumar-singh/"target="_blank">Linkdin</a></li>
+            <li><a href="https://signuppage-1.netlify.app/">Login</a></li>
+         </ul>
+        <ul>
+           <li><a href="https://rajkamalportfolios.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAabZZxfxBqhv0s2bOenKruYJgmXahqf2T57Cwx44qAAzJFygpQynPCYf-mc_aem_Z80EmWE-emyC4WlXxdGsWg" target="_blank">Owner Website</a></li>
+           <li class="hideOnMobile"><a href="https://to-dolistraj.netlify.app/">Home</a></li>
+           <li class="hideOnMobile"><a href="https://aboutmeto-dolist.netlify.app/">About</a></li>
+           <li class="hideOnMobile"><a href="https://www.linkedin.com/in/rajkamal-kumar-singh/"target="_blank">Linkdin</a></li>
+           <li class="hideOnMobile"><a href="https://signuppage-1.netlify.app/">Login</a></li>
+           <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+<div class="body">
+    <div id="heading">
+        TO-DO LIST
+    </div>
+    <div class="maintodo">
+       <input type="search" id="inputBx" placeholder=" Enter Task...">
+     <button type="button" id="reset" onclick="reset()">Clear</button>
+     <ul id="list"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
